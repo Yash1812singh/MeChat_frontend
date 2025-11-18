@@ -37,7 +37,7 @@ export default function AIChatLayout() {
   const silenceDetectedRef = useRef(false);
   const isRestartingRef = useRef(false);
   const isStoppedByUserRef = useRef(false);
-  const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL;
+  const API_BASE = process.env.NEXT_PUBLIC_API_BASE;
   // ---------------- Auto-scroll effects ----------------
   useEffect(() => {
     transcriptRef.current?.scrollTo({
